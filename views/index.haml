@@ -1,0 +1,19 @@
+%p Interfaz de administración
+%a.btn.btn-primary(href='admin/new') Generar nueva tarjeta
+%p
+%table.table
+  - @tarjetas.each do |t|
+    %tr
+    %td
+      = t['titulo']
+    %td
+      %a.btn.btn-default(href='https://api.qrserver.com/v1/create-qr-code/?size=500x500&data=http://qrriate-drg809-1.c9.io/%23/qr/#{t['_id']}' target='_blank') Generar QR
+    %td
+      %a.btn.btn-default(href='http://qrriate-drg809-1.c9.io/#/qr/#{t['_id']}' target='_blank') Ver
+    %td
+      %a.btn.btn-default(href='') Modificar
+    %td
+      %a.btn.btn-default(href='') Eliminar
+%p
+%p
+  = @tarjetas.size.to_s + " tarjetas en el sistema"

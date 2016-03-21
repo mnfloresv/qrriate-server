@@ -1,0 +1,24 @@
+.row
+  .col-md-6
+    %p Introduzca nueva tarjeta:
+    %form(action='/admin/new' method='post')
+      %p
+        %select.form-control(name='tipo')
+          %option(value='punto' selected='selected') Punto de interés
+          %option(value='ruta') Ruta
+          %option(value='bono') Bono
+      %p
+        %input.form-control(type='text' name='titulo' placeholder='Título' size='45')
+      %p
+        %textarea.form-control(name='descripcion' rows='7' cols='50' placeholder='Descripción')
+      %p
+        %input.form-control(type='text' name='lat' placeholder='Latitud')
+      %p
+        %input.form-control(type='text' name='long' placeholder='Longitud')
+      %p    
+        %input.form-control(type='text' name='imagen' placeholder='URL de la imagen' size='70')
+      %p
+        %input.form-control(type='text' name='url' placeholder='URL del recurso' size='70')
+      %p
+        %input.btn.btn-primary(type='submit')
+%p
