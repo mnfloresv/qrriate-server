@@ -1,18 +1,5 @@
+Backend de la aplicación web **ArriateQR** para dinamizar el turismo de la zona, desarrollada durante el Territorio Hackathon el 6 y 7 de marzo de 2015 en Arriate (Málaga).
 
-     ,-----.,--.                  ,--. ,---.   ,--.,------.  ,------.
-    '  .--./|  | ,---. ,--.,--. ,-|  || o   \  |  ||  .-.  \ |  .---'
-    |  |    |  || .-. ||  ||  |' .-. |`..'  |  |  ||  |  \  :|  `--, 
-    '  '--'\|  |' '-' ''  ''  '\ `-' | .'  /   |  ||  '--'  /|  `---.
-     `-----'`--' `---'  `----'  `---'  `--'    `--'`-------' `------'
-    ----------------------------------------------------------------- 
+El backend está formado por una API que devuelve información de tarjetas con información turística en formato JSON y de un panel de administración para editar los datos y generar códigos QR que enlacen a la aplicación.
 
-
-Hi there! Welcome to Cloud9 IDE!
-
-To get you started, create some files, play with the terminal,
-or visit http://docs.c9.io for our documentation.
-If you want, you can also go watch some training videos at
-http://www.youtube.com/user/c9ide.
-
-Happy coding!
-The Cloud9 IDE team
+El frontend fue desarrollado en AngularJS.
